@@ -1,0 +1,49 @@
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	char package;
+	int hours, A, B, C;
+	A = 995;
+	B = 1495;
+	C = 1995;
+	
+	cout << "Internet Service Provider Statement of Acount" << endl;
+	cout << "Enter Package Availed" << endl;
+	cin >> package;
+	cout<< "Hours of Usage" << endl;
+	cin >> hours;
+	
+	if (package == 'A' && hours <= 10)
+	{
+		cout << "Statement of Account:" << endl;
+		cout << "PhP" << A << endl;
+	}
+		else if (package == 'A' && hours >=11)
+		{
+			cout << "Statement of Account:" << endl;
+			cout << "PhP" << A + ((hours - 10) * 20) << endl;
+		}
+		else if (package == 'B' && hours <=20)
+		{
+			cout << "Statement of Account:" << endl;
+			cout << "PhP" << B << endl;
+		}
+		else if (package == 'B' && hours >=21)
+		{
+			cout << "Statement of Account:" << endl;
+			cout << "PhP" << B + ((hours - 20) * 10) << endl;
+		}
+			else
+			{	
+				cout << "Statement of Account:" << endl;
+				cout << "PhP" << C << endl;
+			}
+				
+	_getch();
+	return 0;
+}
