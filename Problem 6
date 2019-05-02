@@ -1,0 +1,27 @@
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	int n, a, b, c, d;
+	a = 0;
+	b = 1;
+	c = 0;
+	n = 22;
+	
+	cout << "Fibonacci Sequence" << endl;
+	
+	for (d = 1;d <= n;d++)
+	{
+		cout << a << "," << " ";
+		c = a + b;
+		a = b;
+		b = c;
+	}
+			
+	_getch();
+	return 0;
+}
