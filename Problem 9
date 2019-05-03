@@ -1,0 +1,28 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int row, column, box1, box2;
+	
+	cout << "Draw a Box" << endl;
+	cout << endl;
+	cout << "How many rows: "; cin >> row;
+	cout << "How many columns: "; cin >> column;
+	
+	for (box1 = 1; box1 <= row; box1++)
+		{
+			for (box2 = 2; box2 <= column; box2++)
+				{
+					cout << " * ";
+				}
+			cout << " * \n";
+		
+		}
+
+
+	_getch();
+	return 0;
+}
